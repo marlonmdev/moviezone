@@ -40,6 +40,12 @@ const App = () => {
 		setMovies(data.Search);
 	};
 
+	const handleKeyPress = (event) => {
+		if (event.key === "Enter" || event.keyCode === 13) {
+			searchMovies(searchTerm);
+		}
+	};
+
 	useEffect(() => {
 		searchMovies(startTerms[randomizer]);
 	}, []);
@@ -52,6 +58,7 @@ const App = () => {
 					placeholder="Search for Movies"
 					values={searchTerm}
 					onChange={(e) => setSearchTerm(e.target.value)}
+					onKeyDown={handleKeyPress}
 				/>
 				<img
 					src={SearchIcon}
