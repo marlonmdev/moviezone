@@ -2,10 +2,10 @@ import React from "react";
 import { useEffect, useState } from "react";
 import "./App.css";
 import SearchIcon from "./search.svg";
-import MovieCard from "./MovieCard";
+import MovieCard from "./MovieCard.jsx";
 
 // OMDB API Key: c2f488e8
-const API_URL = "http://www.omdbapi.com/?apikey=c2f488e8";
+const API_URL = "https://www.omdbapi.com/?apikey=c2f488e8";
 
 // const movie1 = {
 // 	Title: "The Amazing Spiderman 2 Webb Cut",
