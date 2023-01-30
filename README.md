@@ -1,4 +1,4 @@
-#MovieZone
+# MovieZone
 
 <em>A Simple Movie App created using React JS and OMDB API</em>
 
